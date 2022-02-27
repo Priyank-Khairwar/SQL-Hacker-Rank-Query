@@ -35,3 +35,47 @@ The CITY table is described as follows:
 
 Query:*/
 select * from city where id=1661;
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Question3:
+
+Query all columns for every row in the CITY table.
+Input Format:
+The CITY table is described as follows:
+------------------------------
+|   Field     |    Type      |
+------------------------------
+| ID          | NUMBER       |
+| NAME        | VARCHAR2(17) |
+| COUNTRYCODE | VARCHAR2(3)  |
+| DISTRICT    | VARCHAR2(20) |
+| POPULATION  | NUMBER       |
+------------------------------
+Query:*/
+SELECT * FROM CITY;
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Question4:
+
+Query the the names of all the Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+Input Format:
+The CITY table is described as follows:
+------------------------------
+|   Field     |    Type      |
+------------------------------
+| ID          | NUMBER       |
+| NAME        | VARCHAR2(17) |
+| COUNTRYCODE | VARCHAR2(3)  |
+| DISTRICT    | VARCHAR2(20) |
+| POPULATION  | NUMBER       |
+------------------------------
+Query:*/
+
+
+SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';  
